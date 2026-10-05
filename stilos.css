@@ -1,0 +1,109 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .candidates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .candidate {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            width: calc(50% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .candidate:hover {
+            background-color: #e0e0e0;
+        }
+
+        .candidate.selected {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .candidate img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .candidate h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .candidate p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .vote-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .vote-results {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #5564ff; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .vote-button:hover {
+            background-color: #45a049;
+        }
+
+        .vote-results:hover {
+            background-color: #3949ed;
+            color: white;
+        }
+
+        .textbox {
+            width: 250px;
+            font-size: 12pt;
+            height: 50px;
+            border-radius: 10px;
+        }
